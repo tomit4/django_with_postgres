@@ -4,4 +4,5 @@ PG_PORT=5936
 DB_PORT=5432
 PG_USER="admin"
 PG_DB="django_db"
+PG_CONTAINER_NAME="django_db"
 PG_PASS="postgres"
