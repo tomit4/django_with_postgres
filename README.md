@@ -214,6 +214,19 @@ Which will output something along the lines of:
 (10 rows)
 ```
 
+In case you are unfamiliar with PostgreSQL or Docker, you can exit the psql CLI
+like so:
+
+```
+\q
+```
+
+And the docker shell session like so:
+
+```sh
+exit
+```
+
 And that's it! This is just a scaffolding project, but hopefully gives a basic
 overview on how to utilize this repository to quickly spin up a PostgreSQL
 database in Docker and then connect it to Django!
