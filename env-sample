@@ -1,0 +1,6 @@
+# Postgres Config
+PG_HOST="::"
+PG_PORT=5936
+PG_USER="admin"
+PG_DB="django_db"
+PG_PASS="postgres"
