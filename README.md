@@ -14,6 +14,7 @@ cd django_postgres_docker
 python3 -m virutalenv django_postgres_docker
 source django_postgres_docker/bin/activate
 pip install -r requirements.txt
+cp env-sample .env
 docker-compose -f ./docker-compose.yml up -d
 python manage.py makemigrations
 python manage.py migrate
