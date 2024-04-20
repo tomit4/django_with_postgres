@@ -13,7 +13,7 @@ git clone https://github.com/tomit4/django_postgres_docker
 cd django_postgres_docker
 python3 -m virutalenv django_postgres_docker
 source django_postgres_docker/bin/activate
-python install -r requirements.txt
+pip install -r requirements.txt
 docker-compose -f ./docker-compose.yml up -d
 python manage.py makemigrations
 python manage.py migrate
