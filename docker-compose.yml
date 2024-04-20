@@ -10,7 +10,7 @@ services:
       - POSTGRES_PASSWORD=${PG_PASS}
       - POSTGRES_DB=${PG_DB}
     ports:
-      - "5936:5432"
+      - "${PG_PORT}:${DB_PORT}"
     volumes:
       - ./setup.sql:/docker-entrypoint-initdb.d/setup.sql
     healthcheck:
