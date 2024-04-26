@@ -11,7 +11,7 @@ possible, enter the following commands in order:
 ```sh
 git clone https://github.com/tomit4/django_postgres_docker
 cd django_postgres_docker
-python3 -m virutalenv django_postgres_docker
+python3 -m virtualenv django_postgres_docker
 source django_postgres_docker/bin/activate
 pip install -r requirements.txt
 cp env-sample .env
