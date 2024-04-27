@@ -5,18 +5,52 @@ a Virtualized instance of a PostgreSQL database inside of a Docker Container!
 
 ### Quick Start
 
-Should you simply want to clone this repo and get up and started as soon as
-possible, enter the following commands in order:
+#### Prerequisites
+
+Before installing, confirm the following packages are installed on your system.
+- Git
+- Python
+- Django
+- Docker
+- Virtualenv
+
+#### Start
+Clone project locally and navigate to project
 
 ```sh
-git clone https://github.com/tomit4/django_postgres_docker
-cd django_postgres_docker
+git clone https://github.com/tomit4/django_postgres_docker && cd django_postgres_docker
+```
+
+Create virtual Environment
+```sh
 python3 -m virtualenv django_postgres_docker
+```
+
+Activate Docker container
+```sh
 source django_postgres_docker/bin/activate
+```
+
+Install environment requirements
+```sh
 pip install -r requirements.txt
+```
+
+Copy env-sample to .env (this will be updated later)
+
+```sh
 cp env-sample .env
+```
+
+```sh
 docker-compose -f ./docker-compose.yml up -d
+```
+
+```sh
 python manage.py makemigrations
+```
+
+```sh
 python manage.py migrate
 ```
 
