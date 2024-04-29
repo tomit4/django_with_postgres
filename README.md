@@ -18,7 +18,7 @@ a Virtualized instance of a PostgreSQL database inside of a Docker Container!
 Clone project locally and navigate to project
 
 ```sh
-git clone https://github.com/tomit4/django_with_postgres && cd django_postgres_docker
+git clone https://github.com/tomit4/django_with_postgres && cd django_with_postgres
 ```
 
 Create virtual Environment.
