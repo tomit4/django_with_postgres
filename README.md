@@ -18,12 +18,13 @@ a Virtualized instance of a PostgreSQL database inside of a Docker Container!
 Clone project locally and navigate to project
 
 ```sh
-git clone https://github.com/tomit4/django_postgres_docker && cd django_postgres_docker
+git clone https://github.com/tomit4/django_with_postgres && cd django_postgres_docker
 ```
 
 Create virtual Environment.
+
 > Whenever starting a new python project, you'll then need to utilize commands
-associated with virtualenv, otherwise you could install dependencies globally.
+> associated with virtualenv, otherwise you could install dependencies globally.
 
 ```sh
 python3 -m virtualenv django_postgres_docker
@@ -48,6 +49,7 @@ cp env-sample .env
 ```
 
 Spin Up PostgreSQL in Docker
+
 > This config file will spin up the docker instance of a basic PostgreSQL database. Because of the provided setup.sql and .env files, a very simple database is instantiated for Django to interact with.
 
 ```sh
@@ -55,7 +57,8 @@ docker-compose -f ./docker-compose.yml up -d
 ```
 
 Migrate the Database via Django's API:
->This should be run any time there are changes to your model
+
+> This should be run any time there are changes to your model
 
 ```sh
 python manage.py makemigrations && python manage.py migrate
