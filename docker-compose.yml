@@ -14,7 +14,7 @@ services:
     volumes:
       - ./setup.sql:/docker-entrypoint-initdb.d/setup.sql
     healthcheck:
-      test: ["CMD", "pg_isready", "-q", "-d", "postgres", "-U", "psql"]
+      test: ["CMD", "pg_isready", "-q", "-d", "postgres", "-U", "admin"]
       interval: 5s
       timeout: 10s
       retries: 5
