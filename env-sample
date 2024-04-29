@@ -6,5 +6,3 @@ PG_USER="admin"
 PG_DB="django_db"
 PG_CONTAINER_NAME="django_db"
 PG_PASS="postgres"
-
-test
